@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: halant;
+    src: url(fonts/Halant-Medium.ttf);
+    
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header header"
+    "sectionAB sectionAB sectionAB adds"
+    "sectionAB sectionAB sectionAB adds"
+    "footer footer footer footer";
+    gap: 10px;
+}
+
+.header-container {
+    background-color: #7c6a86;
+    display: flex;
+    grid-area: header;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 40%; 
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    list-style: none;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+    font-family: halant;
+      
+}
+
+
+.section-container {
+    background-color: #d5cfd8;
+    font-family: halant;
+    color: white;
+    font-size: 20px;
+    grid-area: sectionAB;
+    padding: 50px;
+}
+
+.quienesSomos h2 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.quienesSomos p {
+    margin: 20px;
+    text-align: justify;
+}
+
+.diseños h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.diseños p {
+    margin: 20px;
+    margin-bottom: 40px ;
+    text-align: justify;
+}
+
+.adds {
+    background-color: #584861;
+    font-family: halant;
+    color: white;
+    font-size: 20px;
+    grid-area: adds;
+    padding: 20px;
+}
+
+.adds div h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.adds div p {
+    margin: 20px;
+    margin-bottom: 40px ;
+    text-align: justify;
+}
+
+.footer-container {
+    background-color: #7c6a86;
+    font-family: halant;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: footer;
+}
+
+.footer-container div ul li {
+    list-style-type: none;
+}
+
+/* Contacto*/
+
+.container1 {
+    display: grid;
+    grid-template-areas: 
+    "header1 header1 header1 header1"
+    "form form form adds1"
+    "form form form adds1"
+    "footer1 footer1 footer1 footer1";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.header-container1 {
+    background-color: #7c6a86;
+    display: flex;
+    grid-area: header1;
+
+}
+
+.formulario {
+    font-family: halant;
+    background-color: #d5cfd8;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    grid-area: form;
+}
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: start;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: #c0b9c4;
+}
+
+.form-row textarea {
+    border-radius: 3px;
+    min-height: 50px;
+    width: 500px;    
+    resize: none;
+}
+
+.adds1 {
+    background-color: #584861;
+    font-family: halant;
+    color: white;
+    font-size: 20px;
+    grid-area: adds1;
+    padding: 20px;
+}
+
+.adds1 div h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.adds1 div p {
+    margin: 20px;
+    margin-bottom: 40px ;
+    text-align: justify;
+}
+
+
+.footer-container1 {
+    background-color: #7c6a86;
+    font-family: halant;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: footer1;
+
+}
+
+.footer-container1 div ul li {
+    list-style-type: none;
+}
+
+
+
